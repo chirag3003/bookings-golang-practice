@@ -1,0 +1,11 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <div class="app">
+        <code class="json">
+            {
+                "name":"{{index .StringMap "test"}} "
+            }
+        </code>
+    </div>
+{{end}}
