@@ -39,10 +39,6 @@ func main() {
 	//HTTP Handlers config
 	repo := handlers.NewRepo(&app)
 	handlers.NewHandlers(repo)
-
-	//http.HandleFunc("/", handlers.Repo.Home)
-	//http.HandleFunc("/about", handlers.Repo.About)
-	//err = http.ListenAndServe(PORT, nil)
 	if err != nil {
 		fmt.Println(err)
 	}
